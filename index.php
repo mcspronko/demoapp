@@ -10,4 +10,5 @@ $application = new App();
 
 $response = $application->run();
 
-echo $response;
+echo "<h1>My First Application</h1>";
+echo "<p>" . $response . "</p>";
