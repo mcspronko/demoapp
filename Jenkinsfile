@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                composer install
+                sh 'composer install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                composer test
+                sh 'composer test'
             }
         }
         stage('Deploy') {
