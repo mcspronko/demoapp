@@ -3,3 +3,5 @@
 This is a demo application.
 
 More description.
+
+## Installation
