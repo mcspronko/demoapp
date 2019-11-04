@@ -19,6 +19,11 @@ pipeline {
           steps {
             sh 'composer test'
           }
+            post {
+                always {
+                  archiveArtifacts artifacts: 'build/unitreport.xml', fingerprint: true
+                }
+            }
         }
       }
     }
