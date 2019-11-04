@@ -11,6 +11,6 @@ class App
 {
     public function run()
     {
-        return "Hello wonderful World";
+        return "Hello World";
     }
 }
