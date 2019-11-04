@@ -20,6 +20,6 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit tests"
+        "test": "vendor/bin/phpunit tests --coverage-xml build/ --whitelist src/"
     }
 }
