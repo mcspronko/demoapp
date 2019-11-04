@@ -8,9 +8,18 @@ pipeline {
       }
     }
     stage('Unit Test') {
-      steps {
-        echo 'Testing..'
-        sh 'composer test'
+      parallel {
+        stage('Unit Test') {
+          steps {
+            echo 'Testing..'
+            sh 'composer test'
+          }
+        }
+        stage('Integration Tests') {
+          steps {
+            sh 'composer test'
+          }
+        }
       }
     }
     stage('Deploy') {
