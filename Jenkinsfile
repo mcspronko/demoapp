@@ -30,8 +30,7 @@ pipeline {
   }
   post {
       always {
-        sh 'composer test'
-        archiveArtifacts artifacts: 'build/*.xml', fingerprint: true
+        archiveArtifacts artifacts: 'build/unitreport.xml', fingerprint: true
       }
   }
 }
