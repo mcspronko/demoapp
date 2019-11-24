@@ -1,6 +1,7 @@
 {
     "name": "pronko/demoapp",
     "type": "project",
+    "description": "Simple PHP Demo Application project",
     "authors": [
         {
             "name": "Max Pronko",
